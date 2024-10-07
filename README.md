@@ -1,2 +1,17 @@
 # mastermind-puzzle
 Mastermind Game is a puzzle that the player should guess a secret code colored marbles.
+
+This Mastermind Game is a code-breaking puzzle that the player should guess a secret code. The game is implemented in Python using the Turtle graphics library for a graphical user interface.
+
+The main components of the game are organized into three classes: Leaderboard, Arrow, and Game.
+
+Leaderboard Class:
+This class loads, draws, and updates the leaderboard information using Turtle graphics, including player names and scores. It also handles errors, such as a missing leaderboard file, and displaying an error gif to indicate.
+
+Arrow Class:
+This class represents an arrow indicating the current round in the main marbles, and moves the arrow to the next line for each round.
+
+Game Class:
+Orchestrates the main game logic. Draws the game board, including squares, marbles, and buttons, using Turtle. Handles mouse clicks on marble buttons, check button, x button, and quit button. Generates a random secret code and checks the player's guesses, updating the result on pegs accordingly. Manages rounds, game over conditions, and updates the leaderboard upon winning.
+
+The game flow is initiated in the main function, which initializes the leaderboard, creates an instance of the game, and sets up the Turtle graphics environment. The player interacts with the game by clicking on buttons, and the game responds by updating the pegs and checking for win or loss conditions.
